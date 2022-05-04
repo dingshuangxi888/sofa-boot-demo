@@ -10,7 +10,6 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <groupId>net.locplus.sofaboot</groupId>
     <artifactId>sofa-boot-demo-web</artifactId>
     <version>1.0.0</version>
 
