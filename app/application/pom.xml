@@ -23,6 +23,10 @@
         </dependency>
         <dependency>
             <groupId>net.locplus.sofaboot</groupId>
+            <artifactId>sofa-boot-demo-infrastructure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.locplus.sofaboot</groupId>
             <artifactId>sofa-boot-demo-facade</artifactId>
         </dependency>
 

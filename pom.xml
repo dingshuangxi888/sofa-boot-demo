@@ -5,7 +5,7 @@
     <parent>
         <groupId>com.alipay.sofa</groupId>
         <artifactId>sofaboot-dependencies</artifactId>
-        <version>${sofa.boot.version}</version>
+        <version>3.12.1</version>
     </parent>
 
     <groupId>net.locplus.sofaboot</groupId>
@@ -16,8 +16,7 @@
     <description>sofa-boot-demo</description>
 
     <properties>
-        <java.version>17</java.version>
-        <sofa.boot.version>3.12.1</sofa.boot.version>
+        <java.version>11</java.version>
     </properties>
 
     <modules>
@@ -76,4 +75,23 @@
         </dependencies>
     </dependencyManagement>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.2</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
